@@ -1,0 +1,8 @@
+var prompt=function(texto) {return lines.shift();};
+var N = parseInt(
+    prompt(""));
+var horas = parseInt(N / 3600);
+var qtdSegundos = parseInt(N % 3600);
+var minutos = parseInt(qtdSegundos / 60);
+var qtdSegundos = parseInt(qtdSegundos % 60);
+console.log(+horas +":" +minutos +":" +qtdSegundos);
