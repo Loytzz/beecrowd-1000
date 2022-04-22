@@ -1,0 +1,9 @@
+var prompt=function(texto) {return lines.shift();};
+var numeroFuncionario = parseInt(
+    prompt(""));
+var horasTrabalhadas = parseInt(
+    prompt(""));
+var valorHora = prompt("");
+var salary = (horasTrabalhadas*valorHora).toFixed(2);
+console.log("NUMBER = " +numeroFuncionario);
+console.log("SALARY = U$ " +salary);
