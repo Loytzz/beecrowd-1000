@@ -1,0 +1,19 @@
+var prompt = function(text) {return lines.shift();};
+var N = parseInt(prompt(""));
+
+var X,cont;
+
+for(var i = 0;i<N;i++) {
+    cont=0;
+    X = parseInt(prompt(""));
+    
+    for(var j=2;j<X;j++) {
+        if(X%j===0) cont++;
+    }
+    if(cont===0) {
+        console.log(X + " eh primo");
+    } else {
+        console.log(X + " nao eh primo");
+
+    }
+}
