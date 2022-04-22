@@ -1,0 +1,16 @@
+var prompt=function(texto) {return lines.shift();};
+var N = parseInt(
+    prompt(""));
+var x = 1;
+var linha;
+
+for(var i = 0; i<N;i++) {
+    linha = "";
+    
+    for(var y = 0; y<3;y++) {
+        linha = linha + x + " ";
+        x++;
+    }
+    console.log(linha + "PUM");
+    x++;
+}
