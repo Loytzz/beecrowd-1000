@@ -1,0 +1,7 @@
+var prompt=function(texto) {return lines.shift();};
+var a = parseInt(
+        prompt(""));
+var b = parseInt(
+        prompt(""));
+var PROD = a*b;
+console.log("PROD = " +PROD);
