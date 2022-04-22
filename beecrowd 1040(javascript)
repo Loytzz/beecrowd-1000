@@ -1,0 +1,27 @@
+var prompt=function(texto) {return lines.shift();};
+var [N1,N2,N3,N4] = prompt("").split(" ").map(Number);
+
+var soma = ((N1*2)+(N2*3)+(N3*4)+(N4*1));
+var media = soma / 10;
+
+if(media >= 7.0){
+    console.log("Media: " + media.toFixed(1));
+    console.log("Aluno aprovado.");
+}else if(media <5.0){
+    console.log("Media: " + media.toFixed(1));
+    console.log("Aluno reprovado.");
+}else{
+    console.log("Media: " + media.toFixed(1));
+    console.log("Aluno em exame.");
+    var NExame = parseFloat(lines.shift());
+    var final = (NExame + media) / 2;
+    if(final >= 5.0){
+        console.log("Nota do exame: " + NExame.toFixed(1));
+        console.log("Aluno aprovado.");
+        console.log("Media final: " + final.toFixed(1));
+    }else{
+        console.log("Nota do exame: " + NExame.toFixed(1));
+        console.log("Aluno reprovado.");
+        console.log("Media final: " + final.toFixed(1));
+    }
+}
