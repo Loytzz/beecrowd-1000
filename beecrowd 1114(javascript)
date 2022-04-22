@@ -1,0 +1,12 @@
+var prompt=function(texto) {return lines.shift();};
+var senha = parseInt(
+    prompt(""));
+
+while(senha!=2002) {
+
+console.log("Senha Invalida");
+var senha = parseInt(prompt(""));
+if(senha==2002) {
+    console.log("Acesso Permitido");
+}
+}
