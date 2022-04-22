@@ -1,0 +1,6 @@
+var prompt=function(texto) {return lines.shift();};
+var R = parseInt(
+        prompt(""));
+var pi = 3.14159;
+var VOLUME = (4.0/3)*pi*R*R*R;
+console.log("VOLUME = " +VOLUME.toFixed(3));
