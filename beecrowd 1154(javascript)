@@ -1,0 +1,16 @@
+var prompt = function(text) {return lines.shift();};
+var x = 100;
+var soma = 0;
+var i = 0;
+
+while(x>=0) {
+    x = parseInt(prompt(""));
+
+    if(x>=0) {
+        i= i+1;
+        soma = soma+x;
+        media = soma/i;
+    }
+}
+        
+        console.log(media.toFixed(2));
