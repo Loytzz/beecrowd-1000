@@ -1,0 +1,9 @@
+var prompt=function(texto) {return lines.shift();};
+var [A,B] = prompt("").split(" ").map(Number);
+var resto = B%A;
+var resto2 = A%B;
+if(resto===0 || resto2===0) {
+    console.log("Sao Multiplos");
+} else {
+    console.log("Nao sao Multiplos");
+}
