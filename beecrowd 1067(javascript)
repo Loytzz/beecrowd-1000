@@ -1,0 +1,9 @@
+var prompt=function(texto) {return lines.shift();};
+var valor = parseInt(
+    prompt(""));
+
+var  i = 1;
+while (i<=valor) {
+    console.log(+i);
+    i=i+2;
+}
