@@ -1,0 +1,11 @@
+var prompt=function(texto) {return lines.shift();};
+var [X,Y] = prompt("").split(" ").map(Number);
+
+while(X!=Y) {
+    if(X>Y) {
+        console.log("Decrescente");
+    } else if (X<Y) {
+        console.log("Crescente");
+    }
+    var [X,Y] = prompt("").split(" ").map(Number);
+}
