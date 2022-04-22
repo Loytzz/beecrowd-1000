@@ -1,0 +1,11 @@
+var prompt=function(texto) {return lines.shift();};
+var N = parseInt(prompt(""));
+
+var multiplicador = 1;
+
+while(multiplicador <= 10) {
+    var total = N*multiplicador;
+    console.log(+multiplicador + " x " +N + " = " +total);
+    multiplicador = multiplicador + 1;
+    
+}
