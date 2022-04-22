@@ -1,0 +1,32 @@
+var prompt=function(texto) {return lines.shift();};
+var N = parseInt(
+    prompt(""));
+console.log(+N);
+
+var notasDe100 = Math.trunc(N/100);
+console.log(+notasDe100 + " nota(s) de R$ 100,00");
+var restoDe100 = N%100;
+
+var notasDe50 = Math.trunc(restoDe100/50);
+console.log(+notasDe50 + " nota(s) de R$ 50,00");
+var restoDe50 = restoDe100%50;
+
+var notasDe20 = Math.trunc(restoDe50/20);
+console.log(+notasDe20 + " nota(s) de R$ 20,00");
+var restoDe20 = restoDe50%20;
+
+var notasDe10 = Math.trunc(restoDe20/10);
+console.log(+notasDe10 + " nota(s) de R$ 10,00");
+var restoDe10 = restoDe20%10;
+
+var notasDe5 = Math.trunc(restoDe10/5);
+console.log(+notasDe5 + " nota(s) de R$ 5,00");
+var restoDe5 = restoDe10%5;
+
+var notasDe2 = Math.trunc(restoDe5/2);
+console.log(+notasDe2 + " nota(s) de R$ 2,00");
+var restoDe2 = restoDe5%2;
+
+var notasDe1 = Math.trunc(restoDe2/1);
+console.log(+notasDe1 + " nota(s) de R$ 1,00");
+var restoDe1 = restoDe2%1;
