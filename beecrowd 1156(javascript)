@@ -1,0 +1,9 @@
+var prompt = function(text) {return lines.shift();};
+var s = 0;
+var j = 1;
+
+for(var a=1;a<=39;a+=2) {
+    s=(s+a/j);
+    j=j*2;
+}
+console.log(s.toFixed(2));
