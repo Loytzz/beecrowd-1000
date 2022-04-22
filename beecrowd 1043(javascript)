@@ -1,0 +1,9 @@
+var prompt=function(texto) {return lines.shift();};
+var [A,B,C] = prompt("").split(" ").map(Number);
+var perimetro = A+B+C;
+var area = (A+B)*C/2;
+if(A < B + C && B < A + C && C < A + B) {
+    console.log("Perimetro = " +perimetro.toFixed(1));
+} else {
+    console.log("Area = " +area.toFixed(1));
+}
