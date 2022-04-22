@@ -1,0 +1,5 @@
+var prompt= function(texto) {return lines.shift();};
+var raio=parseFloat(prompt(""));
+var n=3.14159;
+var area= (n*(raio*raio));
+console.log("A="+area.toFixed(4));
