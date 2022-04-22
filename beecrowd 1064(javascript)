@@ -1,0 +1,15 @@
+var prompt = function(text) {return lines.shift();};
+var num;
+var valor = 0;
+var quant;
+var media =0;
+for(quant=0;quant<6;quant++) {
+    num = parseFloat(prompt(""));
+    if(num>=1) {
+        valor = valor+1;
+        media+=num;
+    }
+}
+media = media/valor;
+console.log(valor + " valores positivos");
+console.log(media.toFixed(1));
