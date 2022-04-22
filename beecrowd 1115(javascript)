@@ -1,0 +1,18 @@
+var prompt = function(text) {return lines.shift();};
+var[x,y] = prompt("X,Y").split(" ").map(Number)
+
+while(x!=0&y!=0){
+    if(x>0&y>0){
+        console.log("primeiro")
+    }
+    else if(x<0&y>0){
+        console.log("segundo")
+    }
+    else if(x<0&y<0){
+        console.log("terceiro")
+    }
+    else{
+        console.log("quarto")
+    }
+    var[x,y] = prompt("X,Y").split(" ").map(Number)
+}
