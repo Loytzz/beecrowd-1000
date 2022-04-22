@@ -1,0 +1,5 @@
+var prompt=function(texto) {return lines.shift();};
+var X = prompt("");   
+var Y = prompt("");    
+var consumoMedio = X / Y;
+console.log(+consumoMedio.toFixed(3) + " km/l");
