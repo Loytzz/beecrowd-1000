@@ -1,0 +1,30 @@
+var prompt=function(texto) {return lines.shift();};
+var nota1, nota2, flag = 1;
+
+while(flag==1) {
+    nota1 = parseFloat(prompt(""));
+
+    while (nota1 > 10 || nota1 < 0) {
+        console.log("nota invalida");
+        nota1 = parseFloat(prompt(""));
+    }
+
+    nota2 = parseFloat(prompt(""));
+
+    while (nota2 > 10 || nota2 < 0) {
+        console.log("nota invalida");
+        nota2 = parseFloat(prompt(""));
+    }
+
+    media = (nota1 + nota2) / 2;
+
+    console.log("media = " +media.toFixed(2));
+
+    console.log("novo calculo (1-sim 2-nao)");
+
+    flag = parseInt(prompt(""));
+    while (flag != 1 && flag != 2) {
+        console.log("novo calculo (1-sim 2-nao)");
+        flag = parseInt(prompt(""));
+    }
+}
