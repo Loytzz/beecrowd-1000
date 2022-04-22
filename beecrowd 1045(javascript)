@@ -1,0 +1,25 @@
+var prompt = function(texto) { return lines.shift(); };
+
+var [A, B, C] = prompt("pontos").split(" ").map(Number);
+var A2 = Math.pow(A,2);
+var B2 = Math.pow(B,2);
+var C2 = Math.pow(C,2);
+
+if(A >= (B+C) || B >= (A+C) || C >= (A+B)){
+    console.log("NAO FORMA TRIANGULO");
+}
+else if(A2===B2+C2 || B2===A2+C2 || C2===A2+B2){
+    console.log("TRIANGULO RETANGULO");
+}
+else if(A2>B2+C2 || B2>A2+C2 || C2>A2+B2){
+    console.log("TRIANGULO OBTUSANGULO");
+}
+else if(A2<B2+C2 || B2<A2+C2 || C2<A2+B2){
+    console.log("TRIANGULO ACUTANGULO");
+}
+if(A == B && A == C){
+    console.log("TRIANGULO EQUILATERO");
+}
+if(A == B && A != C || B == C && B != A || A == C && C != B){
+    console.log("TRIANGULO ISOSCELES");
+}
