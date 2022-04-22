@@ -1,0 +1,15 @@
+var prompt=function(texto) {return lines.shift();};
+var N = parseInt(prompt(""));
+
+var z = 1;
+
+while (z<=N) {
+    var [x,y] = prompt("").split(" ").map(Number);   
+    if(y===0) {
+        console.log("divisao impossivel");
+    }
+    else {
+        console.log((x/y).toFixed(1));
+    }
+    z++;
+}
