@@ -1,0 +1,18 @@
+var prompt=function(texto) {return lines.shift();};
+var [id,qtdItem] = prompt("").split(" ").map(Number);
+if(id==1) {
+ preco = 4*qtdItem;
+}
+else if(id==2) {
+ preco = 4.5*qtdItem;
+}
+else if(id==3){
+ preco = 5.0*qtdItem;
+}
+else if(id==4) {
+ preco = 2.0*qtdItem;
+}
+else if(id==5) {
+ preco = 1.5*qtdItem;
+}
+console.log("Total: R$ " +preco.toFixed(2));
