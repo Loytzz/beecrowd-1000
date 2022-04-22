@@ -1,0 +1,10 @@
+var prompt=function(texto) {return lines.shift();};
+var idadePessoa = parseInt(
+    prompt(""));
+var idadeAnos = parseInt(idadePessoa / 365);
+var idadeRestoDias = parseInt(idadePessoa % 365);
+var idadeMeses = parseInt(idadeRestoDias / 30);
+var idadeRestoDias = parseInt(idadeRestoDias % 30);
+console.log(+idadeAnos + " ano(s)");
+console.log(+idadeMeses + " mes(es)");
+console.log(+idadeRestoDias + " dia(s)");
