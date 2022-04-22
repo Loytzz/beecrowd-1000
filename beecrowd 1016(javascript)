@@ -1,0 +1,5 @@
+var prompt=function(texto) {return lines.shift();};
+var tempo = parseInt(
+    prompt(""));
+var tempoFinal = tempo * 2;
+console.log(+tempoFinal + " minutos");
