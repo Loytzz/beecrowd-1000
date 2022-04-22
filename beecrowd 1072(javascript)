@@ -1,0 +1,16 @@
+var prompt = function(text) {return lines.shift();};
+var N = parseInt(prompt(""));
+var dentro = 0;
+var fora = 0;
+
+for(var i = 0;i<N;i++) {
+    var x = parseInt(prompt(""));
+
+    if(x>=10&& x<=20)  {
+        dentro++;
+    }else {
+            fora++;
+    }
+}
+    console.log(dentro + " in");
+    console.log(fora + " out");
