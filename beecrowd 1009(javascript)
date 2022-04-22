@@ -1,0 +1,10 @@
+var prompt=function(texto) {return lines.shift();};
+var nomeVendedor = prompt("Nome do Vendedor?");
+var salario = parseFloat(prompt(""));
+var vendasEfetuadas = prompt("");
+
+var comissao = vendasEfetuadas * 0.15;
+
+var salarioFinal = salario + comissao;
+
+console.log("TOTAL = R$ " +salarioFinal.toFixed(2));
