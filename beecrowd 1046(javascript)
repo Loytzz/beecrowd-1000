@@ -1,0 +1,7 @@
+var prompt=function(texto) {return lines.shift();};
+var [horaInicial,horaFinal] = prompt("").split(" ").map(Number);
+
+    var tempoFinal = horaFinal-horaInicial;
+if(tempoFinal<=0) { tempoFinal+=24;          
+}
+console.log("O JOGO DUROU " +tempoFinal +" HORA(S)");
