@@ -1,0 +1,14 @@
+var prompt=function(texto) {return lines.shift();};
+var x = parseFloat(prompt("x"));
+var y = parseFloat(prompt("y"));
+
+while(x<0|x>10) {
+    var x = parseFloat(prompt("x"));
+    console.log("nota invalida");
+}
+while(y<0|y>10) {
+    var y = parseFloat(prompt("y"));
+    console.log("nota invalida");
+    
+}
+console.log("media = " +(((x+y)/2).toFixed(2)))
