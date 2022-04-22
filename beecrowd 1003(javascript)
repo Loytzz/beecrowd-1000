@@ -1,0 +1,7 @@
+var prompt=function(texto) {return lines.shift();};
+var A = parseInt(
+    prompt(""));
+var B = parseInt(
+    prompt(""));
+var SOMA = A + B;
+console.log("SOMA = " +SOMA);
