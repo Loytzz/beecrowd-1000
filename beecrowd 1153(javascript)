@@ -1,0 +1,10 @@
+var prompt = function(text) {return lines.shift();};
+var N = parseInt(prompt(""));
+var produto =1;
+var i = N;
+
+ while(i>=1) {
+     produto = produto * i;
+     i=i-1;
+ }
+ console.log(produto);
