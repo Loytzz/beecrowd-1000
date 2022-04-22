@@ -1,0 +1,45 @@
+var prompt=function(texto) {return lines.shift();};
+var classificacao = prompt("");
+var classificacao2 = prompt("");
+var classificacao3 = prompt("");
+
+if(classificacao=="vertebrado") {
+if(classificacao2=="ave") {
+if(classificacao3=="carnivoro") {
+console.log("aguia");
+}}}
+if(classificacao=="vertebrado") {
+if(classificacao2=="ave") {
+if(classificacao3=="onivoro") {
+    console.log("pomba");
+}}}
+if(classificacao=="vertebrado") {
+if(classificacao2=="mamifero") {
+if(classificacao3=="onivoro") {
+    console.log("homem");
+}}}
+if(classificacao=="vertebrado") {
+if(classificacao2=="mamifero") {
+if(classificacao3=="herbivoro") {
+    console.log("vaca");
+}}}
+if(classificacao=="invertebrado") {
+if(classificacao2=="inseto") {
+if(classificacao3=="hematofago") {
+    console.log("pulga");
+}}}
+if(classificacao=="invertebrado") {
+if(classificacao2=="inseto") {
+if(classificacao3=="herbivoro") {
+    console.log("lagarta");
+}}}
+if(classificacao=="invertebrado") {
+if(classificacao2=="anelideo") {
+if(classificacao3=="hematofago") {
+    console.log("sanguessuga");
+}}}
+if(classificacao=="invertebrado") {
+if(classificacao2=="anelideo") {
+if(classificacao3=="onivoro") {
+    console.log("minhoca");
+}}}
