@@ -1,0 +1,12 @@
+var prompt = function(text) {return lines.shift();};
+var num;
+var valor = 0;
+var quant;
+
+for(quant=0;quant<6;quant++) {
+    num = parseFloat(prompt(""));
+    if(num>=1) {
+        valor = valor+1;
+    }
+}
+console.log(valor + " valores positivos");
