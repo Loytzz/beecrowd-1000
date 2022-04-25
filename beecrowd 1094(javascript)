@@ -1,0 +1,30 @@
+var prompt = function(text) {return lines.shift();};
+var n = parseInt(prompt(""));
+var c = 0;
+var r = 0;
+var s = 0;
+
+for(var i = 0; i<n; i++) {
+    var [a,b] = prompt("").split(" ");
+    a=parseInt(a);
+
+    if(b=="R") {
+        r=r+a;
+    } else if(b=="S") {
+        s=s+a;
+    } else if(b=="C") {
+        c=c+a;
+    }
+}
+
+var total = c+r+s;
+var pc = (c/total*100);
+var pr = (r/total*100);
+var ps = (s/total*100);
+console.log("Total: " + total + " cobaias");
+console.log("Total de coelhos: " +c );
+console.log("Total de ratos: " +r );
+console.log("Total de sapos: " +s);
+console.log("Percentual de coelhos: " +pc.toFixed(2) +" %");
+console.log("Percentual de ratos: " +pr.toFixed(2) +" %");
+console.log("Percentual de sapos: " +ps.toFixed(2) + " %");
