@@ -1,0 +1,13 @@
+var prompt = function(text) {return lines.shift();};
+var n = parseInt(prompt("N"));
+var T1 = 0;
+var T2=1;
+var T3=0;
+var A;
+for(var x = 1;x<=n-2;x=x+1){
+    T3=T2+T1;
+      T1=T2;
+      T2=T3;
+      var A = [A]+" "+[T3];
+}
+console.log([0]+" "+[1]+[A]);
