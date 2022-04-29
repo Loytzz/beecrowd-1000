@@ -1,0 +1,31 @@
+var prompt = function(text) {return lines.shift();};
+var x = 1;
+var jogos = 0;
+var inter= 0;
+var gremio = 0;
+var draws = 0;
+while(x==1){
+    var[a,b]=prompt("A,B").split(" ").map(Number);
+    jogos=jogos+1;
+    if(a>b){
+        inter=inter+1;
+    }
+    else if(a<b){
+        gremio=gremio+1;
+    }
+    else if(a==b){
+        draw=draw+1;
+    }
+    console.log("Novo grenal (1-sim 2-nao)");
+    var x = parseInt(prompt("X"));
+}
+console.log(jogos + " grenais");
+console.log("Inter:"+inter);
+console.log("Gremio:"+gremio);
+console.log("Empates:"+draws);
+if(gremio>inter){
+    console.log("Gremio venceu mais");
+}
+else if(inter>gremio){
+    console.log("Inter venceu mais");
+}
